@@ -1,5 +1,14 @@
-let log = function(message) {
-  console.log(message);
+// Defining an interface
+interface Point {
+  x: number;
+  y: number;
+}
+
+let drawPoint = (point: Point) => {
+  // ...
 };
-// Typescript arrow function
-let doLog = message => console.log(message);
+
+drawPoint({
+  x: 1,
+  y: 2
+});
