@@ -10,11 +10,11 @@ class Point {
     console.log("X:" + this.x + "Y:" + this.y);
   }
 
-  getX() {
+  get X() {
     return this.x;
   }
 
-  setX(value) {
+  set X(value) {
     if (value < 0) throw new Error("value cannot be less than 0.");
 
     this.x = value;
@@ -22,6 +22,6 @@ class Point {
 }
 
 let point = new Point(1, 2);
-let x = point.getX();
-point.setX(10);
+let x = point.X;
+point.X = 10;
 point.draw();
