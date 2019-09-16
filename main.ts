@@ -9,7 +9,12 @@ class Point {
   draw() {
     console.log("X:" + this.x + "Y:" + this.y);
   }
+
+  getX() {
+    return this.x;
+  }
 }
 
 let point = new Point(1, 2);
+let x = point.getX();
 point.draw();
