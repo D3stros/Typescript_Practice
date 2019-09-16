@@ -1,5 +1,5 @@
-let message;
-message = "abc";
-// 2 ways of type assertion
-let endsWithC = (<string>message).endsWith("c");
-let alternativeWay = (message as string).endsWith("c");
+let log = function(message) {
+  console.log(message);
+};
+// Typescript arrow function
+let doLog = message => console.log(message);
